@@ -50,9 +50,9 @@ $(function() {
 	// gallery container
 	var $rgGallery			= $('#rg-gallery'),
 	// carousel container
-	$esCarousel			= $rgGallery.find('div.es-carousel-wrapper'),
+	$allImgWrapper			= $rgGallery.find('div.allImg-wrapper'),
 	// the carousel items
-	$items				= $esCarousel.find('ul > li'),
+	$items = $allImgWrapper.find('ul > li'),
 	// total number of items
 	itemsCount			= $items.length;
 	
@@ -87,7 +87,7 @@ $(function() {
 				
 				// we are using the elastislide plugin:
 				// http://tympanus.net/codrops/2011/09/12/elastislide-responsive-carousel/
-				$esCarousel.show().elastislide({
+			    $allImgWrapper.show().elastislide({
 					imageW 	: 65,
 					onClick	: function( $item ) {
 						if( anim ) return false;
@@ -100,7 +100,7 @@ $(function() {
 				});
 				
 				// set elastislide's current to current
-				$esCarousel.elastislide( 'setCurrent', current );
+			    $allImgWrapper.elastislide('setCurrent', current);
 				
 			},
 			_addViewModes	= function() {
@@ -114,8 +114,8 @@ $(function() {
 				
 				$viewfull.on('click.rgGallery', function( event ) {
 						if( mode === 'carousel' )
-							$esCarousel.elastislide( 'destroy' );
-						$esCarousel.hide();
+							$allImgWrapper.elastislide( 'destroy' );
+						$allImgWrapper.hide();
 					$viewfull.addClass('rg-view-selected');
 					$viewthumbs.removeClass('rg-view-selected');
 					mode	= 'fullview';
@@ -224,8 +224,8 @@ $(function() {
 					$loader.hide();
 					
 					if( mode === 'carousel' ) {
-						$esCarousel.elastislide( 'reload' );
-						$esCarousel.elastislide( 'setCurrent', current );
+						$allImgWrapper.elastislide( 'reload' );
+						$allImgWrapper.elastislide( 'setCurrent', current );
 					}
 					
 					anim	= false;
@@ -235,10 +235,10 @@ $(function() {
 			},
 			addItems		= function( $new ) {
 			
-				$esCarousel.find('ul').append($new);
+				$allImgWrapper.find('ul').append($new);
 				$items 		= $items.add( $($new) );
 				itemsCount	= $items.length; 
-				$esCarousel.elastislide( 'add', $new );
+				$allImgWrapper.elastislide( 'add', $new );
 			
 			};
 		
