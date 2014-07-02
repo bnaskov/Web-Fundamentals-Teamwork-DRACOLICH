@@ -1,5 +1,4 @@
 @import url('reset.css');
-
 /* General Codrops Demo Style */
 body{
 	background:#1F1F1F url(../images/pattern.png) repeat top left;
@@ -142,3 +141,21 @@ header ul
 		color: #fff;
 		background-color: #369;
 		}
+/* MAIN PAGE */	
+h1#heading-home{
+	font-size: 50px;
+	margin:20px;
+}
+@media all and (max-width: 1300px){
+  h1#heading-home{
+    line-height:70px;
+	font-size: 50px;
+	margin:20px;
+	}
+}
+
+img#building{
+	display:block;
+	margin:0 auto;
+	height: 500px;
+}
