@@ -2,6 +2,8 @@
 .allImg-wrapper{
 	background: #101010;
 	padding:10px 27px;
+	width:60%;
+	margin-left:20%;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
