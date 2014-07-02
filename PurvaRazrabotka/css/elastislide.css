@@ -18,6 +18,9 @@ header img{
 	position:relative;
 	margin-bottom:20px;
 }
+.allImg img{
+	height:60px;
+}
 .allImg{
 	overflow:hidden;
 	background:#000;
