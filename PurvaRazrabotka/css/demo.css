@@ -141,21 +141,170 @@ header ul
 		color: #fff;
 		background-color: #369;
 		}
-/* MAIN PAGE */	
-h1#heading-home{
-	font-size: 50px;
-	margin:20px;
+
+
+/* MAIN PAGE */
+.content.home div{
+	margin: 10px 10% 10px;
+	padding: 15px;
+	background-color: #000;
+	border-radius: 10px;
+	word-wrap:break-word;
 }
-@media all and (max-width: 1300px){
-  h1#heading-home{
-    line-height:70px;
-	font-size: 50px;
-	margin:20px;
+
+	.content.home div h1{
+		font-size: 3rem;
+		margin:0 auto;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		line-height: 100%;
+	}
+
+	.content.home div img{
+		max-width: 80%;
+		display: block;
+		margin: 0px auto;
+	}
+
+@media all and (max-width: 960px){
+	.content.home div h1{
+		font-size: 2rem;
+	}
+	
+	.content.home div img{
+	max-width: 90%;
 	}
 }
 
-img#building{
-	display:block;
-	margin:0 auto;
-	height: 500px;
+@media all and (max-width: 640px){
+	.content.home div{
+		margin: 10px 0px 10px 0px;
+	}
+}
+
+@media all and (max-width: 480px){	
+	.content.home div h1{
+		font-size: 1.3rem;
+		line-height: 120%;
+	}
+
+	.content.home div img{
+		max-width: 100%;
+	}
+}
+
+
+/*ARTICLES*/
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(http://fonts.googleapis.com/css?family=Neucha);
+
+
+.content.articles article{
+	margin: 10px 10% 10px;
+	padding: 15px;
+	background-color: #000;
+	border-radius: 10px;
+	word-wrap:break-word;
+}
+
+
+	.content.articles article h2{
+		font-family: 'Permanent Marker', cursive, Arial, serif;
+		font-weight: bold;
+		font-size: 2rem;
+		margin-bottom: 10px;
+		text-align: center;
+		color: #FF9C00;
+	}
+
+	.content.articles article div p{
+		font-family: 'Neucha', cursive, Arial, serif;
+		text-align: justify;
+		text-indent: 5%;
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+	}
+
+		.content.articles article div p span{
+			color: #FF9C00;
+		}
+
+
+@media screen and (max-width: 480px) {
+	.content.articles article{
+		margin: 0px 0px 10px 0px;
+	}
+
+	.content.articles article h2{
+		font-size: 1.5rem;
+	}
+
+	.content.articles article div p{
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.content.articles article h2{
+		font-size: 1.2rem;
+	}
+
+	.content.articles article div p{
+		font-size: 0.8rem;
+		text-align: left;
+	}
+}
+
+
+/*CONTACTS*/
+
+.content.contacts article{
+	margin: 10px 10% 10px;
+	padding: 15px;
+	background-color: #000;
+	border-radius: 10px;
+	word-wrap:break-word;
+}
+
+.content.contacts article div{
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	padding-top: 20px;
+ 	margin-left: 10px; 	
+ 	max-width: 350px;
+}
+
+	.content.contacts article p{
+	 	font-size: 1.5rem;
+	 	font-family: 'Permanent Marker', cursive, Arial, serif;
+	}
+
+	.content.contacts article p span{
+	 	color: #FF9C00;
+	}
+
+
+@media screen and (max-width: 768px) {
+	.content.contacts article img{
+ 	display: block;
+ 	margin: 0px auto;
+	}
+
+	.content.contacts article div{
+	 	display: block;
+	 	margin: 0px auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.content.contacts article{	
+		margin: 0px 0px 10px 0px;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	.content.contacts article p{
+	 	font-size: 1.1rem;	 	
+	}
 }
