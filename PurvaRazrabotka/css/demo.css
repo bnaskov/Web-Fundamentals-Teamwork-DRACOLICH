@@ -53,6 +53,10 @@ header{
 	-moz-box-shadow: 1px 0px 2px #000;
 	-webkit-box-shadow: 1px 0px 2px #000;
 	box-shadow: 1px 0px 2px #000;
+	 border-radius: 10px;
+            -moz-border-radius: 15px;
+            -khtml-border-radius: 15px;
+            -webkit-border-radius: 15px;
 }
 header a{
 	line-height:18px;
@@ -88,6 +92,11 @@ header img{
 	margin:0px auto;
 	width:30%;
 	min-width:180px;
+	border: 2px solid black;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -khtml-border-radius: 10px;
+            -webkit-border-radius: 10px;
 	
 }
 header ul
@@ -98,7 +107,8 @@ header ul
 		text-align: center;
 		}
 
-		header ul li { display: inline; }
+		header ul li { display: inline;
+					}
 
 		header ul li a
 		{
@@ -106,6 +116,10 @@ header ul
 		padding: .2em 1em;
 		color: #fff;
 		background-color: #036;
+		border-radius: 10px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            -webkit-border-radius: 5px;
 		}
 
 		header ul li a:hover
