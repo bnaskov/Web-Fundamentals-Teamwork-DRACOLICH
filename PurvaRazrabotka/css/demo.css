@@ -83,10 +83,11 @@ h1{
 	}
 	
 }
-header .img{
-display:inline-block;
+header img{
+	display:inline-block;
 	margin:0px auto;
-	max-width:60%;
+	width:30%;
+	min-width:180px;
 	
 }
 header ul
